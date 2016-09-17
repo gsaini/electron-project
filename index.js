@@ -16,7 +16,12 @@ function onClosed() {
 }
 
 function createMainWindow() {
-	const win = new electron.BrowserWindow({ fullscreen: true });
+	const win = new electron.BrowserWindow({ 
+		fullscreen: true,
+		closable: true,
+		fullscreenable: true,
+		skipTaskbar: true 
+	});
 
 	win.loadURL(`file://${__dirname}/app/index.html`);
 	//win.webContents.openDevTools(); 
