@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Medical Project</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<form>
+			<div class="form-group row">
+				<label for="inputCenterRegNo" class="col-sm-2 col-form-label">Center Reg. No</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputCenterRegNo" placeholder="Center Reg. No.">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputCenterRegDate" class="col-sm-2 col-form-label">Center Reg. Date</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputCenterRegDate" placeholder="Center Reg. Date.">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputPatientRegDate" class="col-sm-2 col-form-label">Patient Registration Date</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputPatientRegDate" placeholder="Patient Registration Date">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputPatientRegNo" class="col-sm-2 col-form-label">Patient Registration No.</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputPatientRegNo" placeholder="Patient Registration No.">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputPCTSId" class="col-sm-2 col-form-label">PCTS ID</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputPCTSId" placeholder="PCTS ID">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputIdentityProof" class="col-sm-2 col-form-label">Identity Proof</label>
+				<div class="col-sm-5">
+					<select class="custom-select form-control">
+						<option selected>Select</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="inputIdentityProof">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputPatientRegDate" class="col-sm-2 col-form-label">Patient Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputPatientRegDate" placeholder="Patient Name">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputPatientAge" class="col-sm-2 col-form-label">Age</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputPatientAge" placeholder="Age">
+					<p class="form-text text-muted">(years)</p>
+				</div>
+			</div>
+
+			<fieldset class="form-group">
+    			<legend>Number of Children</legend>
+
+				<div class="form-group row">
+					<label for="inputMaleChildren" class="col-sm-2 col-form-label">Male</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputMaleChildren">
+					</div>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="inputMaleChildAges" placeholder="e.g. (5,7,9) years">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputFemaleChildren" class="col-sm-2 col-form-label">Female</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputFemaleChildren">
+					</div>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="inputFemaleChildAges" placeholder="e.g. (5,7,9) years">
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset class="form-group">
+    			<legend>Patient's Address</legend>
+				<div class="form-group row">
+					<label for="selectState" class="col-sm-2 col-form-label">State</label>
+					<div class="col-sm-5">
+						<select class="custom-select form-control" id="selectState">
+							<option selected>Select</option>
+							<option value="1" selected>Rajasthan</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					<div class="col-sm-5">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox"> Other country
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="selectDistrict" class="col-sm-2 col-form-label">District</label>
+					<div class="col-sm-5">
+					<select class="custom-select form-control" id="selectDistrict">
+						<option selected>Select</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputFullAddress" class="col-sm-2 col-form-label">Full Address</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" id="inputFullAddress" rows="3"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputFullAddress" class="col-sm-2 col-form-label">Region</label>
+					<div class="col-sm-10">
+						<label class="custom-control custom-radio">
+						<input id="radio1" name="radio" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="custom-control-description">Rural</span>
+						</label>
+
+						<label class="custom-control custom-radio">
+						<input id="radio2" name="radio" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="custom-control-description">Urban</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputMobile" class="col-sm-2 col-form-label">Mobile No.</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputMobile">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputTelephone" class="col-sm-2 col-form-label">Telephone No.</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputTelephoneCode">
+					</div>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputTelephone">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputEmail">
+					</div>
+				</div>
+				
+
+			</fieldset>
+
+			<div class="form-group row">
+				<label for="inputMenstrualPeriod" class="col-sm-2 col-form-label">Referred By (Referral Slips to be preserved carefully with Form F)</label>
+				<div class="col-sm-10">
+					<label class="custom-control custom-radio">
+						<input id="radio1" name="radio" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="custom-control-description">Doctor</span>
+					</label>
+
+					<label class="custom-control custom-radio">
+						<input id="radio2" name="radio" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="custom-control-description">Genetic Counselling Center</span>
+					</label>
+
+					<label class="custom-control custom-radio">
+						<input id="radio3" name="radio" type="radio" class="custom-control-input">
+						<span class="custom-control-indicator"></span>
+						<span class="custom-control-description">Self Referral by Gynaecologist/Radiologogist/RMP conducting the diagnostic procedures</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputMenstrualPeriod" class="col-sm-2 col-form-label">Last Menstrual Period</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="inputMenstrualPeriod">
+					
+				</div>
+				<div class="col-sm-5">
+					<label class="form-check-label">
+						<input class="form-check-input" type="checkbox"> Not known
+					</label>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="inputWeeksPregnancy" class="col-sm-2 col-form-label">Weeks of Pregnancy</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputWeeksPregnancy" placeholder="Weeks of Pregnancy">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<div class="offset-sm-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>

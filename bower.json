@@ -1,0 +1,26 @@
+{
+  "name": "medical-project",
+  "description": "My awe-inspiring app",
+  "main": "index.js",
+  "authors": [
+    "Gopal Saini"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
