@@ -12,9 +12,30 @@ body {
 	margin:20px;
 }
 
+.form-container{
+    margin: 20px;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container .form-header, .form-container .form-footer{
+    line-height: 10px;
+    margin: 20px 0;
+    padding: 20px 10px;
+    background: burlywood;    
+}
+
 .form-group.required .col-form-label:before { 
     color: #d00;
     content: "*";
     position: absolute;
     margin-left: -8px;
+}
+
+header, footer{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 20px;
 }
