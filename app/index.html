@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Medical Project</title>
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"></link>
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
@@ -42,8 +43,8 @@
 				<div class="form-group row required">
 					<label for="inputPatientRegDate" class="col-sm-2 col-form-label">Patient Registration Date</label>
 					<div class="col-sm-5">
-						<input type="text" class="form-control" id="inputPatientRegDate" name="patientRegDate" placeholder="Patient Registration Date"
-							required>
+						<input type="text" class="form-control" id="inputPatientRegDate" name="patientRegDate"
+							required maxlength="100">
 					</div>
 				</div>
 
@@ -51,8 +52,8 @@
 				<div class="form-group row required">
 					<label for="inputPatientRegNo" class="col-sm-2 col-form-label">Patient Registration No.</label>
 					<div class="col-sm-5">
-						<input type="text" class="form-control" id="inputPatientRegNo" name="patientRegNo" placeholder="Patient Registration No."
-							required>
+						<input type="text" class="form-control" id="inputPatientRegNo" name="patientRegNo"
+							required maxlength="100">
 					</div>
 				</div>
 
@@ -60,7 +61,7 @@
 				<div class="form-group row">
 					<label for="inputPCTSId" class="col-sm-2 col-form-label">PCTS ID</label>
 					<div class="col-sm-5">
-						<input type="text" class="form-control" id="inputPCTSId" placeholder="PCTS ID" name="patientPCTSId">
+						<input type="text" class="form-control" id="inputPCTSId" name="patientPCTSId" maxlength="20">
 					</div>
 				</div>
 
@@ -84,15 +85,15 @@
 				<div class="form-group row required">
 					<label for="inputPatientName" class="col-sm-2 col-form-label">Patient Name</label>
 					<div class="col-sm-5">
-						<input type="text" class="form-control" id="inputPatientName" placeholder="Patient Name" required name="patientName">
+						<input type="text" class="form-control" id="inputPatientName" required name="patientName" maxlength="100">
 					</div>
 				</div>
 
 				<!-- Age -->
 				<div class="form-group row required">
 					<label for="inputPatientAge" class="col-sm-2 col-form-label">Age</label>
-					<div class="col-sm-5">
-						<input type="text" class="form-control" id="inputPatientAge" placeholder="Age" required name="patientAge">
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputPatientAge" required name="patientAge" maxlength="3">
 						<p class="help-block">(years)</p>
 					</div>
 				</div>
@@ -109,7 +110,7 @@
 					</select>
 					</div>
 					<div class="col-sm-3">
-						<input type="text" class="form-control" id="inputRelativeName" name="patientRelativeName">
+						<input type="text" class="form-control" id="inputRelativeName" name="patientRelativeName" maxlength="100">
 					</div>
 				</div>
 
@@ -120,20 +121,20 @@
 					<div class="form-group row">
 						<label for="inputMaleChildren" class="col-sm-2 col-form-label">Male</label>
 						<div class="col-sm-2">
-							<input type="text" class="form-control" id="inputMaleChildren" name="patientMaleChildren">
+							<input type="text" class="form-control" id="inputMaleChildren" name="patientMaleChildren" maxlength="2">
 						</div>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" id="inputMaleChildAges" placeholder="e.g. (5,7,9) years" name="patientMaleChildrenAge">
+							<input type="text" class="form-control" id="inputMaleChildAges" placeholder="e.g. (5,7,9) years" name="patientMaleChildrenAge" maxlength="20">
 						</div>
 					</div>
 
 					<div class="form-group row">
 						<label for="inputFemaleChildren" class="col-sm-2 col-form-label">Female</label>
 						<div class="col-sm-2">
-							<input type="text" class="form-control" id="inputFemaleChildren" name="patientFemaleChildren">
+							<input type="text" class="form-control" id="inputFemaleChildren" name="patientFemaleChildren" maxlength="2">
 						</div>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" id="inputFemaleChildAges" placeholder="e.g. (5,7,9) years" name="patientFemaleChildrenAge">
+							<input type="text" class="form-control" id="inputFemaleChildAges" placeholder="e.g. (5,7,9) years" name="patientFemaleChildrenAge" maxlength="20">
 						</div>
 					</div>
 				</fieldset>
@@ -202,7 +203,7 @@
 					<div class="form-group row">
 						<label for="inputFullAddress" class="col-sm-2 col-form-label">Full Address</label>
 						<div class="col-sm-5">
-							<textarea class="form-control" id="inputFullAddress" rows="3" name="patientFullAddress"></textarea>
+							<textarea class="form-control" id="inputFullAddress" rows="3" name="patientFullAddress" maxlength="250"></textarea>
 						</div>
 					</div>
 
@@ -226,7 +227,7 @@
 					<div class="form-group row">
 						<label for="inputMobile" class="col-sm-2 col-form-label">Mobile No.</label>
 						<div class="col-sm-5">
-							<input type="tel" class="form-control" id="inputMobile" name="patientMobileNo">
+							<input type="tel" class="form-control" id="inputMobile" name="patientMobileNo" maxlength="11">
 						</div>
 					</div>
 
@@ -236,14 +237,14 @@
 							<input type="tel" class="form-control" id="inputTelephoneCode" name="patientTelephoneCode">
 						</div>
 						<div class="col-sm-4">
-							<input type="tel" class="form-control" id="inputTelephone" name="patientTelephoneNo">
+							<input type="tel" class="form-control" id="inputTelephone" name="patientTelephoneNo" maxlength="11">
 						</div>
 					</div>
 
 					<div class="form-group row">
 						<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
 						<div class="col-sm-5">
-							<input type="email" class="form-control" id="inputEmail" name="patientEmail">
+							<input type="email" class="form-control" id="inputEmail" name="patientEmail" maxlength="100">
 						</div>
 					</div>
 				</fieldset>
@@ -275,22 +276,25 @@
 				<!-- Last Menstrual Period -->
 				<div class="form-group row required">
 					<label for="inputMenstrualPeriod" class="col-sm-2 col-form-label">Last Menstrual Period</label>
-					<div class="col-sm-5">
-						<input type="text" class="form-control last-menstrual-period-txtbox" id="inputMenstrualPeriod" name="lastMenstrualPeriod"
-							required>
-
+					<div class="col-sm-2 input-group date" data-provide="datepicker">
+						<input type="text" class="form-control last-menstrual-period-txtbox datepicker" data-autoclose="true" data-date-format="dd/mm/yyyy" id="inputMenstrualPeriod" name="lastMenstrualPeriod" required>
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"></span>
+						</div>
 					</div>
+					<!--
 					<div class="col-sm-5">
 						<label class="form-check-label">
 						<input class="form-check-input not-known" type="checkbox" name="isLastMenstrualPeriodKnown"> Not known
-					</label>
+						</label>
 					</div>
+					-->
 				</div>
 
 				<!-- Weeks of Pregnancy -->
 				<div class="form-group row required">
 					<label for="inputWeeksPregnancy" class="col-sm-2 col-form-label">Weeks of Pregnancy</label>
-					<div class="col-sm-5">
+					<div class="col-sm-1">
 						<input type="text" class="form-control" id="inputWeeksPregnancy" name="patientWeeksOfPregnancy" required>
 					</div>
 				</div>
@@ -329,7 +333,8 @@
 
 	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 	<script src="scripts/main.js" defer></script>
 
 	<script>if (window.module) module = window.module;</script>

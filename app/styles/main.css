@@ -8,9 +8,6 @@ body {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.container{
-	margin:20px;
-}
 
 .form-container{
     margin: 20px;
@@ -38,4 +35,8 @@ header, footer{
     text-decoration: underline;
     font-weight: bold;
     margin: 20px;
+}
+
+.input-group[class*=col-]{
+    padding: 0 15px;
 }
