@@ -4,135 +4,148 @@
 <head>
 	<meta charset="utf-8">
 	<title>Medical Project</title>
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"></link>
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
 	<div class="container">
-		<form name="frmSave" role="form" action="" method="POST">
-
-			<!-- Center Reg. No. -->
-			<div class="form-group row">
-				<label for="inputCenterRegNo" class="col-sm-2 col-form-label">Center Reg. No</label>
-				<div class="col-sm-5">
-					<input type="text" name="centerRegNo" class="form-control" id="inputCenterRegNo">
+		<header>
+			<p>Form F</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut delectus nostrum dolore ipsum provident velit cumque inventore
+				dolorem, necessitatibus voluptates, quia tempore! Rerum quos tempore, accusamus minima corporis nulla commodi.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nostrum quas, officia ex voluptas voluptate deleniti
+				hic eos ut dolorem praesentium quaerat sunt perspiciatis expedita rerum voluptates. Fugiat, sunt porro! </p>
+		</header>
+		<section class="form-container">
+			<form name="frmSave" role="form" action="" method="POST">
+				<div class="form-header">
+					Section A: To be filled in for all Diagnostic Procedures/Tests
 				</div>
-			</div>
-
-			<!-- Center Reg. Date -->
-			<div class="form-group row">
-				<label for="inputCenterRegDate" class="col-sm-2 col-form-label">Center Reg. Date</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputCenterRegDate" name="centerRegDate" placeholder="Center Reg. Date.">
+				<!-- Center Reg. No. -->
+				<div class="form-group row">
+					<label for="inputCenterRegNo" class="col-sm-2 col-form-label">Center Reg. No</label>
+					<div class="col-sm-5">
+						<p class="form-control-static">8</p>
+					</div>
 				</div>
-			</div>
 
-			<!-- Patient Registration Date -->
-			<div class="form-group row required">
-				<label for="inputPatientRegDate" class="col-sm-2 col-form-label">Patient Registration Date</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputPatientRegDate" name="patientRegDate" placeholder="Patient Registration Date" required>
+				<!-- Center Reg. Date -->
+				<div class="form-group row">
+					<label for="inputCenterRegDate" class="col-sm-2 col-form-label">Center Reg. Date</label>
+					<div class="col-sm-5">
+						<p class="form-control-static">26 Apr 2002</p>
+					</div>
 				</div>
-			</div>
 
-			<!-- Patient Registration No. -->
-			<div class="form-group row required">
-				<label for="inputPatientRegNo" class="col-sm-2 col-form-label">Patient Registration No.</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputPatientRegNo" name="patientRegNo" placeholder="Patient Registration No." required>
+				<!-- Patient Registration Date -->
+				<div class="form-group row required">
+					<label for="inputPatientRegDate" class="col-sm-2 col-form-label">Patient Registration Date</label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="inputPatientRegDate" name="patientRegDate"
+							required maxlength="100">
+					</div>
 				</div>
-			</div>
 
-			<!-- PCTS ID -->
-			<div class="form-group row">
-				<label for="inputPCTSId" class="col-sm-2 col-form-label">PCTS ID</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputPCTSId" placeholder="PCTS ID"  name="patientPCTSId">
+				<!-- Patient Registration No. -->
+				<div class="form-group row required">
+					<label for="inputPatientRegNo" class="col-sm-2 col-form-label">Patient Registration No.</label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="inputPatientRegNo" name="patientRegNo"
+							required maxlength="100">
+					</div>
 				</div>
-			</div>
 
-			<!-- Identity Proof -->
-			<div class="form-group row">
-				<label for="inputIdentityProof" class="col-sm-2 col-form-label">Identity Proof</label>
-				<div class="col-sm-2">
-					<select class="custom-select form-control"  name="patientIdentityProofType">
+				<!-- PCTS ID -->
+				<div class="form-group row">
+					<label for="inputPCTSId" class="col-sm-2 col-form-label">PCTS ID</label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="inputPCTSId" name="patientPCTSId" maxlength="20">
+					</div>
+				</div>
+
+				<!-- Identity Proof -->
+				<div class="form-group row">
+					<label for="inputIdentityProof" class="col-sm-2 col-form-label">Identity Proof</label>
+					<div class="col-sm-2">
+						<select class="custom-select form-control" name="patientIdentityProofType">
 						<option selected>Select</option>
 						<option value="1">One</option>
 						<option value="2">Two</option>
 						<option value="3">Three</option>
 					</select>
+					</div>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" id="inputIdentityProof" name="patientIdentityProof">
+					</div>
 				</div>
-				<div class="col-sm-3">
-					<input type="text" class="form-control" id="inputIdentityProof" name="patientIdentityProof">
-				</div>
-			</div>
 
-			<!-- Patient Name -->
-			<div class="form-group row required">
-				<label for="inputPatientName" class="col-sm-2 col-form-label">Patient Name</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputPatientName" placeholder="Patient Name" required  name="patientName">
+				<!-- Patient Name -->
+				<div class="form-group row required">
+					<label for="inputPatientName" class="col-sm-2 col-form-label">Patient Name</label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="inputPatientName" required name="patientName" maxlength="100">
+					</div>
 				</div>
-			</div>
 
-			<!-- Age -->
-			<div class="form-group row required">
-				<label for="inputPatientAge" class="col-sm-2 col-form-label">Age</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputPatientAge" placeholder="Age" required  name="patientAge">
-					<p class="help-block">(years)</p>
+				<!-- Age -->
+				<div class="form-group row required">
+					<label for="inputPatientAge" class="col-sm-2 col-form-label">Age</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputPatientAge" required name="patientAge" maxlength="3">
+						<p class="help-block">(years)</p>
+					</div>
 				</div>
-			</div>
 
-			<!-- Relative Details -->
-			<div class="form-group row required">
-				<label for="inputRelativeName" class="col-sm-2 col-form-label">Relative</label>
-				<div class="col-sm-2">
-					<select class="custom-select form-control" name="patientRelativeType">
+				<!-- Relative Details -->
+				<div class="form-group row required">
+					<label for="inputRelativeName" class="col-sm-2 col-form-label">Relative</label>
+					<div class="col-sm-2">
+						<select class="custom-select form-control" name="patientRelativeType">
 						<option selected>Select</option>
 						<option value="1">Spouse</option>
 						<option value="2">Father</option>
 						<option value="3">Mother</option>
 					</select>
-				</div>
-				<div class="col-sm-3">
-					<input type="text" class="form-control" id="inputRelativeName" name="patientRelativeName">
-				</div>
-			</div>
-
-			<!-- Number of children -->
-			<fieldset class="form-group">
-    			<legend>Number of Children</legend>
-
-				<div class="form-group row">
-					<label for="inputMaleChildren" class="col-sm-2 col-form-label">Male</label>
-					<div class="col-sm-2">
-						<input type="text" class="form-control" id="inputMaleChildren" name="patientMaleChildren">
 					</div>
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="inputMaleChildAges" placeholder="e.g. (5,7,9) years"  name="patientMaleChildrenAge">
+					<div class="col-sm-3">
+						<input type="text" class="form-control" id="inputRelativeName" name="patientRelativeName" maxlength="100">
 					</div>
 				</div>
 
-				<div class="form-group row">
-					<label for="inputFemaleChildren" class="col-sm-2 col-form-label">Female</label>
-					<div class="col-sm-2">
-						<input type="text" class="form-control" id="inputFemaleChildren" name="patientFemaleChildren">
-					</div>
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="inputFemaleChildAges" placeholder="e.g. (5,7,9) years"  name="patientFemaleChildrenAge">
-					</div>
-				</div>
-			</fieldset>
+				<!-- Number of children -->
+				<fieldset class="form-group">
+					<legend>Number of Children</legend>
 
-			<!-- Patient Address -->
-			<fieldset class="form-group required">
-    			<legend>Patient's Address</legend>
-				<div class="form-group row">
-					<label for="selectState" class="col-sm-2 col-form-label">State</label>
-					<div class="col-sm-5">
-						<select class="custom-select form-control state-selectbox" id="selectState" name="patientState">
+					<div class="form-group row">
+						<label for="inputMaleChildren" class="col-sm-2 col-form-label">Male</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputMaleChildren" name="patientMaleChildren" maxlength="2">
+						</div>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputMaleChildAges" placeholder="e.g. (5,7,9) years" name="patientMaleChildrenAge" maxlength="20">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="inputFemaleChildren" class="col-sm-2 col-form-label">Female</label>
+						<div class="col-sm-2">
+							<input type="text" class="form-control" id="inputFemaleChildren" name="patientFemaleChildren" maxlength="2">
+						</div>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputFemaleChildAges" placeholder="e.g. (5,7,9) years" name="patientFemaleChildrenAge" maxlength="20">
+						</div>
+					</div>
+				</fieldset>
+
+				<!-- Patient Address -->
+				<fieldset class="form-group required">
+					<legend>Patient's Address</legend>
+					<div class="form-group row">
+						<label for="selectState" class="col-sm-2 col-form-label">State</label>
+						<div class="col-sm-5">
+							<select class="custom-select form-control state-selectbox" id="selectState" name="patientState">
 							<option>Select</option>
 							<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
 							<option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -170,129 +183,158 @@
 							<option value="Uttar Pradesh">Uttar Pradesh</option>
 							<option value="West Bengal">West Bengal</option>
 						</select>
-					</div>
-					<div class="col-sm-5">
-						<label class="form-check-label">
+						</div>
+						<div class="col-sm-5">
+							<label class="form-check-label">
 							<input class="form-check-input other-country-chkbox" type="checkbox" name="isPatientBelongsOtherCountry"> Other country
 						</label>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-group row">
-					<label for="selectDistrict" class="col-sm-2 col-form-label">District</label>
-					<div class="col-sm-5">
-					<select class="custom-select form-control district-selectbox" id="selectDistrict" name="patientDistrict">
+					<div class="form-group row">
+						<label for="selectDistrict" class="col-sm-2 col-form-label">District</label>
+						<div class="col-sm-5">
+							<select class="custom-select form-control district-selectbox" id="selectDistrict" name="patientDistrict">
 						<option selected>Select</option>
 					</select>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-group row">
-					<label for="inputFullAddress" class="col-sm-2 col-form-label">Full Address</label>
-					<div class="col-sm-5">
-						<textarea class="form-control" id="inputFullAddress" rows="3" name="patientFullAddress"></textarea>
+					<div class="form-group row">
+						<label for="inputFullAddress" class="col-sm-2 col-form-label">Full Address</label>
+						<div class="col-sm-5">
+							<textarea class="form-control" id="inputFullAddress" rows="3" name="patientFullAddress" maxlength="250"></textarea>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-group row">
-					<label for="radio1" class="col-sm-2 col-form-label">Region</label>
-					<div class="col-sm-5">
-						<label class="custom-control custom-radio">
+					<div class="form-group row">
+						<label for="radio1" class="col-sm-2 col-form-label">Region</label>
+						<div class="col-sm-5">
+							<label class="custom-control custom-radio">
 							<input id="radio1" name="region" value="Rural" type="radio" class="custom-control-input">
 							<span class="custom-control-indicator"></span>
 							<span class="custom-control-description">Rural</span>
 						</label>
 
-						<label class="custom-control custom-radio">
+							<label class="custom-control custom-radio">
 							<input id="radio2" name="region" value="Urban" type="radio" class="custom-control-input">
 							<span class="custom-control-indicator"></span>
 							<span class="custom-control-description">Urban</span>
 						</label>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-group row">
-					<label for="inputMobile" class="col-sm-2 col-form-label">Mobile No.</label>
-					<div class="col-sm-5">
-						<input type="tel" class="form-control" id="inputMobile" name="patientMobileNo">
+					<div class="form-group row">
+						<label for="inputMobile" class="col-sm-2 col-form-label">Mobile No.</label>
+						<div class="col-sm-5">
+							<input type="tel" class="form-control" id="inputMobile" name="patientMobileNo" maxlength="11">
+						</div>
 					</div>
-				</div>
 
-				<div class="form-group row">
-					<label for="inputTelephone" class="col-sm-2 col-form-label">Telephone No.</label>
-					<div class="col-sm-1">
-						<input type="tel" class="form-control" id="inputTelephoneCode" name="patientTelephoneCode">
+					<div class="form-group row">
+						<label for="inputTelephone" class="col-sm-2 col-form-label">Telephone No.</label>
+						<div class="col-sm-1">
+							<input type="tel" class="form-control" id="inputTelephoneCode" name="patientTelephoneCode">
+						</div>
+						<div class="col-sm-4">
+							<input type="tel" class="form-control" id="inputTelephone" name="patientTelephoneNo" maxlength="11">
+						</div>
 					</div>
-					<div class="col-sm-4">
-						<input type="tel" class="form-control" id="inputTelephone" name="patientTelephoneNo">
-					</div>
-				</div>
 
-				<div class="form-group row">
-					<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-					<div class="col-sm-5">
-						<input type="email" class="form-control" id="inputEmail" name="patientEmail">
+					<div class="form-group row">
+						<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+						<div class="col-sm-5">
+							<input type="email" class="form-control" id="inputEmail" name="patientEmail" maxlength="100">
+						</div>
 					</div>
-				</div>
-			</fieldset>
+				</fieldset>
 
-			<!-- Referred By -->
-			<div class="form-group row required">
-				<label for="radioDoctor" class="col-sm-2 col-form-label">Referred By (Referral Slips to be preserved carefully with Form F)</label>
-				<div class="col-sm-10">
-					<label class="custom-control custom-radio">
+				<!-- Referred By -->
+				<div class="form-group row required">
+					<label for="radioDoctor" class="col-sm-2 col-form-label">Referred By (Referral Slips to be preserved carefully with Form F)</label>
+					<div class="col-sm-10">
+						<label class="custom-control custom-radio">
 						<input id="radioDoctor" name="referredBy" value="Doctor" type="radio" class="custom-control-input">
 						<span class="custom-control-indicator"></span>
 						<span class="custom-control-description">Doctor</span>
 					</label>
 
-					<label class="custom-control custom-radio">
+						<label class="custom-control custom-radio">
 						<input id="radioGcc" name="referredBy" value="GCC" type="radio" class="custom-control-input">
 						<span class="custom-control-indicator"></span>
 						<span class="custom-control-description">Genetic Counselling Center</span>
 					</label>
 
-					<label class="custom-control custom-radio">
+						<label class="custom-control custom-radio">
 						<input id="radioRMP" name="referredBy" value="RMP" type="radio" class="custom-control-input">
 						<span class="custom-control-indicator"></span>
 						<span class="custom-control-description">Self Referral by Gynaecologist/Radiologogist/RMP conducting the diagnostic procedures</span>
 					</label>
+					</div>
 				</div>
-			</div>
 
-			<!-- Last Menstrual Period -->
-			<div class="form-group row required">
-				<label for="inputMenstrualPeriod" class="col-sm-2 col-form-label">Last Menstrual Period</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control last-menstrual-period-txtbox" id="inputMenstrualPeriod" name="lastMenstrualPeriod" required>
-					
-				</div>
-				<div class="col-sm-5">
-					<label class="form-check-label">
+				<!-- Last Menstrual Period -->
+				<div class="form-group row required">
+					<label for="inputMenstrualPeriod" class="col-sm-2 col-form-label">Last Menstrual Period</label>
+					<div class="col-sm-2 input-group date" data-provide="datepicker">
+						<input type="text" class="form-control last-menstrual-period-txtbox datepicker" data-autoclose="true" data-date-format="dd/mm/yyyy" id="inputMenstrualPeriod" name="lastMenstrualPeriod" required>
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"></span>
+						</div>
+					</div>
+					<!--
+					<div class="col-sm-5">
+						<label class="form-check-label">
 						<input class="form-check-input not-known" type="checkbox" name="isLastMenstrualPeriodKnown"> Not known
-					</label>
+						</label>
+					</div>
+					-->
 				</div>
-			</div>
 
-			<!-- Weeks of Pregnancy -->
-			<div class="form-group row required">
-				<label for="inputWeeksPregnancy" class="col-sm-2 col-form-label">Weeks of Pregnancy</label>
-				<div class="col-sm-5">
-					<input type="text" class="form-control" id="inputWeeksPregnancy" name="patientWeeksOfPregnancy" required>
+				<!-- Weeks of Pregnancy -->
+				<div class="form-group row required">
+					<label for="inputWeeksPregnancy" class="col-sm-2 col-form-label">Weeks of Pregnancy</label>
+					<div class="col-sm-1">
+						<input type="text" class="form-control" id="inputWeeksPregnancy" name="patientWeeksOfPregnancy" required>
+					</div>
 				</div>
-			</div>
 
-			<div class="form-group row">
-				<div class="offset-sm-2 col-sm-5 pull-right">
-					<button type="submit" class="btn btn-primary pull-right">Save</button>
+				<div class="form-group row form-footer">
+					<label for="radio-non-invasive" class="col-sm-2 col-form-label sr-only">&nbsp;</label>
+					<div class="col-sm-5">
+						<label class="custom-control custom-radio">
+							<input id="radio-non-invasive" name="region" value="Rural" type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Non-Invasive</span>
+						</label>
+
+						<label class="custom-control custom-radio">
+							<input id="radio-invasive" name="region" value="Urban" type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Invasive</span>
+						</label>
+					</div>
 				</div>
-			</div>
-		</form>
+				<!-- Submit form -->
+				<div class="form-group row">
+					<div class="offset-sm-2 col-sm-5 pull-right">
+						<button type="submit" class="btn btn-primary pull-right">Save</button>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<footer>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis asperiores nisi reprehenderit. Voluptatibus doloremque
+				reiciendis repellendus aliquam velit tempora, totam dolorem ullam accusamus cumque similique nam nisi. Facilis, suscipit
+				excepturi.</p>
+		</footer>
 	</div>
 
 	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 	<script src="scripts/main.js" defer></script>
 
 	<script>if (window.module) module = window.module;</script>

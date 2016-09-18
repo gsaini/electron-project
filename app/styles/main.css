@@ -8,8 +8,19 @@ body {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.container{
-	margin:20px;
+
+.form-container{
+    margin: 20px;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container .form-header, .form-container .form-footer{
+    line-height: 10px;
+    margin: 20px 0;
+    padding: 20px 10px;
+    background: burlywood;    
 }
 
 .form-group.required .col-form-label:before { 
@@ -17,4 +28,15 @@ body {
     content: "*";
     position: absolute;
     margin-left: -8px;
+}
+
+header, footer{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.input-group[class*=col-]{
+    padding: 0 15px;
 }
