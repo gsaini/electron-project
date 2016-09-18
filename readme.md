@@ -1,4 +1,4 @@
-# medical-project
+# electron-project
 
 > My awe-inspiring app
 
