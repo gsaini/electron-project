@@ -15,6 +15,10 @@ function onClosed() {
 	mainWindow = null;
 }
 
+function isOnline(){
+	return navigator.onLine;
+}
+
 function createMainWindow() {
 	const win = new electron.BrowserWindow({ 
 		fullscreen: true,
