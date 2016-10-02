@@ -21,7 +21,7 @@ function isOnline(){
 
 function createMainWindow() {
 	const win = new electron.BrowserWindow({ 
-		fullscreen: true,
+		fullscreen: false,
 		closable: true,
 		fullscreenable: true,
 		skipTaskbar: true 
